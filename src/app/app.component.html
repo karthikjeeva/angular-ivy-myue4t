@@ -1,13 +1,3 @@
-<label>Search names</label>
-<input type="text"
-       placeholder="search name"
-       aria-label="Number"
-       matInput
-       [formControl]="myControl"
-       [matAutocomplete]="auto">
-
-<mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption disableRipple>
-  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-    {{option}}
-  </mat-option>
-</mat-autocomplete>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
